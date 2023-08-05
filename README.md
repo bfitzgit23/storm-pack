@@ -19,11 +19,27 @@ Later on ...
 - transformers
 - numpy
 - spacy
+
 - scikit-learn
+> `sudo pacman -S python-scikit-learn`
+
+
+
 - pandas
+> `sudo pacman -S python-pandas`
+
+
+
 - matplotlib
+> `sudo pacman -S python-matplotlib`
+
+
 - seaborn
+> `sudo pacman -S python-seaborn`
+
 - joblib
+> `sudo pacman -S python-joblib`
+
 
 
 
