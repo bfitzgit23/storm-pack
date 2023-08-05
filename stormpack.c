@@ -72,6 +72,11 @@ void installPackage(const char* package) {
     system(command);
 }
 
+
+void cleanCache(const char* package) {
+  system("sudo pacman -Sc --noconfirm");
+}
+
 void upgradePackages() {
     printf("Do you want to upgrade your packages? (y/n): ");
     char upgraderesponse;
@@ -426,6 +431,7 @@ int main() {
     printf("Enter the package-name \n\n\n\n");
     scanf("%s", package);
     installPackage(package);
+    cleanCache(package);
 
     
   }
