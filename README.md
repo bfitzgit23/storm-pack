@@ -2,8 +2,10 @@
 
 ## Introduction 
 
-storm-pack is a package manager wrapper for the pacman package manager 
-using machine learning and artificial intelligence capabilities.
+Introducing the remarkable Storm-Pack: 
+
+A revolutionary package manager wrapper that harnesses the power of Machine Learning 
+and Artificial Intelligence to enhance more capabilities of the Pacman package manager.
 
 
 ## Getting Started 
