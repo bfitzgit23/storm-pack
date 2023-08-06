@@ -68,12 +68,12 @@ xx  xxxxx xxxx x x
 
 void installPackage(const char* package) {
     char command[100];
-    snprintf(command, sizeof(command), "sudo pacman -S %s", package);
+    snprintf(command, sizeof(command), "sudo pacman -S %s --noconfirm", package);
     system(command);
 }
 
 
-void cleanCache(const char* package) {
+void cleanCache() {
   system("sudo pacman -Sc --noconfirm");
 }
 
@@ -360,8 +360,8 @@ void welcomeGreeter() {
 
     printf("Welcome to the storm pack. \n\n\n\n");
 
-    printf("-S <package name>\n");
-    printf("-Syyu <upgrade packages>\n");
+    printf("-i <package name>\n");
+    printf("-u <upgrade packages>\n");
 }
 
 int main() {
@@ -431,7 +431,7 @@ int main() {
     printf("Enter the package-name \n\n\n\n");
     scanf("%s", package);
     installPackage(package);
-    cleanCache(package);
+    cleanCache();
 
     
   }
